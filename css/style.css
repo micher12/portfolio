@@ -22,11 +22,7 @@ body::-webkit-scrollbar-thumb{
 /*Essenciais*/
 @font-face{
     font-family: "Lemon Milk";
-    src: url(../otf/LemonMilk.otf) format(truetype);
-    src: url(../otf/LEMONMILK-Bold.otf) format(truetype);
-    src: url(../otf/LEMONMILK-Light.otf) format(truetype);
-    src: url(../otf/LEMONMILK-Medium.otf) format(truetype);
-    src: url(../otf/LEMONMILK-Regular.otf) format(truetype);
+    src: url(../otf/LemonMilk.otf) format("truetype"), url(../otf/LEMONMILK-Bold.otf) format("truetype"),url(../otf/LEMONMILK-Light.otf) format("truetype"),url(../otf/LEMONMILK-Medium.otf) format("truetype"),url(../otf/LEMONMILK-Regular.otf) format("truetype");
 }
 .container{
     max-width: 1600px;

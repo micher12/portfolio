@@ -20,10 +20,6 @@ body::-webkit-scrollbar-thumb{
     color: #a2d2fd;
 }
 /*Essenciais*/
-@font-face{
-    font-family: "Lemon Milk";
-    src: url(../otf/LemonMilk.otf) format("truetype"), url(../otf/LEMONMILK-Bold.otf) format("truetype"),url(../otf/LEMONMILK-Light.otf) format("truetype"),url(../otf/LEMONMILK-Medium.otf) format("truetype"),url(../otf/LEMONMILK-Regular.otf) format("truetype");
-}
 .container{
     max-width: 1600px;
     width: 100%;

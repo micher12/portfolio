@@ -16,6 +16,32 @@ $(function(){
     
     });
 
+    //mudarFade
+    function modifyDataAOS() {
+        var content = $('.flexdisplay').find('.flexcontent');
+
+        if ($(window).width() <= 1000) {
+            var direction = 'right';
+
+            $(content).each(function (index) {
+                $(this).attr('data-aos', 'fade-' + direction);
+                direction = direction === 'right' ? 'left' : 'right';
+            });
+        } else {
+            $(content).each(function (index) {
+                $(this).attr('data-aos', originalDataAOS[index]);
+            });
+        }
+    }
+    var originalDataAOS = [];
+    $('.flexdisplay').find('.flexcontent').each(function () {
+        originalDataAOS.push($(this).attr('data-aos'));
+    });
+
+    $(window).on('resize', modifyDataAOS);
+    modifyDataAOS();
+    /*====================================*/
+
     //acompanhar
     skeweffect()
     function skeweffect(){
